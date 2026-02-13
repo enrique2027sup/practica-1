@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tercer Página Web Responsive</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0%;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        header, nav, main, footer {
+            padding: 15px;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+        }
+
+        nav {
+            background: #f3f4f6;
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+        }
+
+        /* Centramos el contenido y lo hacemos responsive con max-width */
+
+        .wrap {
+            max-width: 900px;
+            margin: auto;
+            
+        }
+
+        /*Navegación simple que se ajusta sola */
+
+        nav a {
+            display: inline-block;
+            margin: 5px 10px 5px 0px;
+            padding: 8px 10px;
+            background: white;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #111;
+        }
+
+        /* Cajas en vertical */
+
+        .caja {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0; 
+        } 
+
+        main div{
+            display: flex;
+        }
+    </style>
+
+    <header>
+        <div class="wrap">
+            <h1>Mi Web Responsive (María José Henríquez)</h1>
+            <p>Esto funciona bien en móvil sin casi usar media queries</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="wrap">
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Galería</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrap">
+            <section class="caja">
+                <h2>Sección A</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque odit fuga nihil, debitis exercitationem inventore enim nulla. Perferendis libero illo mollitia saepe commodi soluta, eveniet iure repellat quasi, aspernatur similique!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse rerum deserunt quisquam, mollitia atque eius quam, a pariatur inventore velit dolor consequuntur quae voluptatem officia tenetur! Quaerat reiciendis ratione quo?</p>
+            </section>
+
+            <section class="caja">
+                <h2>Sección B</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ab eveniet ut autem nostrum itaque laboriosam nihil veritatis quo corporis atque sunt veniam deleniti ipsa et, dolore quam hic. Nostrum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, id aspernatur? Expedita neque, eveniet soluta voluptas ut fuga laudantium assumenda quia esse nihil quae! Suscipit reprehenderit atque optio? Neque, dolor.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <p>© 2026 - Ejemplo básico Responsive</p>
+        </div>
+    </footer>
+</body>
+</html>

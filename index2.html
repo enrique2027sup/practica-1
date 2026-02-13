@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer página web responsive</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, footer {
+            padding: 15px;
+        }
+        header{
+            background: #333;
+            color: white;
+        }
+        nav{
+            background: #eee;
+            text-align: center;
+        }
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+
+        .Contenedor{
+            display: flex;
+            gap: 50px;
+            padding: 15px;
+        }
+        .col{
+            background-color: #f6f6f6;
+            padding: 15px;
+            flex: 1;
+        }
+        /* Cuamdo la pantalla es pequeña: Columnas una dejabo de otra */
+        @media (max-width: 700px) {
+            .Contenedor {
+                flex-direction: column;
+            }
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img{
+            
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <header>
+        <h1>Mi Web Responsive (María José Henríquez)</h1>
+        <p>Ejemplo simple para entender responsive</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="Contenedor">
+            <section class="col">
+                <h2>Sección 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae velit id error reprehenderit esse, nihil magnam cum excepturi ad harum tempora sequi impedit! Reprehenderit asperiores earum corrupti dolores rem quisquam!</p>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eaque eos non architecto commodi reiciendis similique ipsam, animi vero ipsa voluptas a perspiciatis veniam perferendis odit! Omnis voluptatem optio eius!</P>
+                <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2017/06/19/5fa3c9523e5ae.jpeg" alt="gato">
+            </section>
+
+            <section class="col">
+                <h2>Sección 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est delectus explicabo, temporibus maiores rerum cumque tenetur animi aperiam, culpa autem quos quae vitae quibusdam, nesciunt nobis dolores aut ipsum. Dolores.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate esse dolores amet minima atque? Expedita quaerat repudiandae at numquam. Eveniet odit maiores eum voluptates asperiores illo cumque nihil voluptas dolores!</p>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.zbDsg9byRAhZDWxYZg8bbQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="gato2">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <P>© 2026 - Ejemplo sencillo</P>
+    </footer>
+</body>
+</html>

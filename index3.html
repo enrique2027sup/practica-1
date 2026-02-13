@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Segunda Página Web responsive</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1,5;
+        }
+
+        header, nav, main, footer{
+            padding: 15px;
+        }
+        header{
+            background: #2b6cb0;
+            color: white;
+        }
+        nav{
+            background: #e2e8f0;
+            text-align: center;
+            
+            
+        }
+        footer{
+            background: #2b6cb0;
+            color: white;
+            text-align: center;
+        }
+        /*Grid de 2 columnas*/
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 15px;
+            gap: 15px;
+        }
+        .caja{
+            background: #f7faf7;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 1px 5px 5px 1px rgb(95, 95, 95);
+        }
+        nav a{
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        nav img {
+           height: auto;
+          width: 40px;
+           display: block
+           
+        }
+      
+    </style>
+
+    <header>
+        <h1>Mi Web Responsive (María Henríquez)</h1>
+        <p>Ejemplo simple usando grid.</p>
+    </header>
+
+    <nav> 
+         <img src="https://i.pinimg.com/originals/8d/c8/3a/8dc83a79c73212a632bbfe89bfb85e09.jpg" alt="Logo">
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Acerca</a>
+        
+    </nav>
+
+    <main>
+        <div class="grid">
+            <article class="caja">
+                <h2>Artículo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, omnis? Consectetur, deserunt pariatur? Deleniti accusantium ab quos, eius libero accusamus quas neque, iusto ad nostrum fuga tempore enim tempora illum?</p>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus totam aut inventore. Unde, magni iste! Voluptates repudiandae adipisci maxime? Quidem amet repudiandae ipsum doloremque. Deserunt illum adipisci ex sapiente architecto.</P>
+            </article>
+
+             <article class="caja">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, omnis? Consectetur, deserunt pariatur? Deleniti accusantium ab quos, eius libero accusamus quas neque, iusto ad nostrum fuga tempore enim tempora illum?</p>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus totam aut inventore. Unde, magni iste! Voluptates repudiandae adipisci maxime? Quidem amet repudiandae ipsum doloremque. Deserunt illum adipisci ex sapiente architecto.</P>
+            </article>
+
+            <article class="caja">
+                <h2>Artículo 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, omnis? Consectetur, deserunt pariatur? Deleniti accusantium ab quos, eius libero accusamus quas neque, iusto ad nostrum fuga tempore enim tempora illum?</p>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus totam aut inventore. Unde, magni iste! Voluptates repudiandae adipisci maxime? Quidem amet repudiandae ipsum doloremque. Deserunt illum adipisci ex sapiente architecto.</P>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <P> Footer - ejemplo con Grid</P>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.CSS">
+</head>
+<body>
+    <header>
+        <h1>Mi Página Básica</h1>
+        <nav>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Info">Info</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Inicio">
+            <h2>Inicio</h2>
+            <p>
+                Está página usa <b>pseudoclases</b> como <code>:hover</code>. <code>:focus</code> y <code>;valid</code>/<code>:invalid</code>
+            </p>
+            <a class="btn" href="#Contacto">Ir al formulario</a>
+        </section>
+    </main>
+
+    <section id="Info">
+        <h2>Info</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Tarjeta 1</h3>
+                <p>Pasa el mouse encima para ver <code>:hover</code>.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 2</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 3</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 4</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Tarjeta 1</h3>
+                <p>Pasa el mouse encima para ver <code>:hover</code>.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 2</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 3</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+            <div class="card">
+                <h3>Tarjeta 4</h3>
+                <p>En movil se acomodan una debajo de otra.</p>
+            </div>
+        </div>
+      
+            
+        </div>
+    </section>
+
+    <section id="Contacto">
+        <h2>Contacto</h2>
+
+        <form>
+            <label>
+                Nombre:
+                <input type="text" required minlength="3" placeholder="Tu nombre">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" required placeholder="correo@ejemplo.com">
+            </label>
+
+            <label>
+                Mensaje:
+                <textarea minlength="10" placeholder="Escribe algo..."></textarea>
+            </label>
+
+            <label class="check">
+                <input type="checkbox" required />
+                Acepto téminos
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© Derechos de autor - María José Henríquez</p>
+    </footer>
+</body>
+</html>
